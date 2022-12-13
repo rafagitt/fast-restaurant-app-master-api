@@ -61,8 +61,9 @@ Simplemente en los archivos views.py de app food y app user puede borrar o comen
 
 ->  authentication_classes = (TokenAuthentication,)
 
-Inicie Sesión desde Django Admin y listo! Puede probar los diferentes tipos de permisos de casa usuario
+Inicie Sesión desde Django Admin y listo! Puede probar los diferentes tipos de permisos de usuarios comunes y de usuarios administradores
 
+### Disfrute de leer el código y de probarlo!
 
 
 
