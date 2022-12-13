@@ -41,5 +41,29 @@ Igual si no esta familiarizado con Docker, tambien puede crear su entorno virtua
 que vienen en el archivo requirements.txt con PIP y colocar sus variables de entorno en un archivo .env preferentemente
 al nivel del mismo documento de texto que contiene dichas dependencias
 
+### Notas a tomar en cuenta para sus pruebas:
+
+Le recomendamos ampliamente para realizar peticiones que requieran token (sobre todo la de logout), utilizar un programa externo
+para realizarlas, puede ser POSTMAN o similar o bien conectarla a una interfaz frontend personalizada, para esto ultimo deberá instalar
+y agregar Django Cors en el archivo settings.py:
+
+INSTALLED_APPS = ['corsheaders',]
+
+MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware',]
+
+CORS_ORIGIN_WHITELIST = ['http://localhost:8000']
+
+---> Django Cors ya vienen incluido en el paquete de dependencia requirements.txt
+
+Ahora bien, supongamos que solo desee probar esta api desde la cómoda interfaz de restframework:
+
+Simplemente en los archivos views.py de app food y app user puede borrar o comentar la linea de código de cada vista que dice:
+
+->  authentication_classes = (TokenAuthentication,)
+
+Inicie Sesión desde Django Admin y listo! Puede probar los diferentes tipos de permisos de casa usuario
+
+
+
 
 
