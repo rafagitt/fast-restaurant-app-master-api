@@ -1,8 +1,7 @@
-# FAST RESTAURANT API - EXCELENTES FUNCIONALIDADES
+# FAST RESTAURANT
 
-
-## Esta es una API hecha con DJANGO, RESTFRAMEWORK, DOCKER, DOCKERCOMPOSE, POSTGRESQL
-
+## Esta es una API hecha con Django, Django Restframework,
+Doker, Docker-compose, conectada a una base de datos Postgresql
 
 #### Características:
 
