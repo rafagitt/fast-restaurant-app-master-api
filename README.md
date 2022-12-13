@@ -7,7 +7,7 @@
 
 #### Características:
 
-PUBLICO: Puede ver la pagina general y los platillos, además de registrarse e iniciar sesion
+PUBLICO: Puede ver el listado de los platillos, además de registrarse e iniciar sesion
 
 PRIVADO: Además de lo publico, puede generar pedidos de los platillos de este restaurant, así como cancelarlos
 
@@ -25,7 +25,7 @@ también puede cancelar los pedidos que le soliciten por teléfono
 - Si un usuario realiza 3 pedidos en un solo día, el ultimo pedido tendrá un fabuloso 50% de descuento
 
 - Si un usuario cancela más de tres veces en un periodo de 4 días no podrá volver
-a ordenar platillos en un periodo de 4 días más
+a ordenar platillos hasta que hayan transcurrido 4 días más
 
 - Los Administradores deben poder ver los pedidos de todos, para poder atenderlos o cancelarlos
 
@@ -45,7 +45,7 @@ al nivel del mismo documento de texto que contiene dichas dependencias
 
 Le recomendamos ampliamente para realizar peticiones que requieran token (sobre todo la de logout), utilizar un programa externo
 para realizarlas, puede ser POSTMAN o similar o bien conectarla a una interfaz frontend personalizada, para esto ultimo deberá instalar
-y agregar Django Cors en el archivo settings.py:
+Django Cors y despues en el archivo settings.py agregar lo siguiente:
 
 INSTALLED_APPS = ['corsheaders',]
 
@@ -53,13 +53,13 @@ MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware',]
 
 CORS_ORIGIN_WHITELIST = ['http://localhost:8000']
 
----> Django Cors ya vienen incluido en el paquete de dependencia requirements.txt
+-> Django Cors ya viene incluido en el paquete de dependencia requirements.txt <-
 
 Ahora bien, supongamos que solo desee probar esta api desde la cómoda interfaz de restframework:
 
 Simplemente en los archivos views.py de app food y app user puede borrar o comentar la linea de código de cada vista que dice:
 
-->  authentication_classes = (TokenAuthentication,)
+->  authentication_classes = (TokenAuthentication,) <-
 
 Inicie Sesión desde Django Admin y listo! Puede probar los diferentes tipos de permisos de usuarios comunes y de usuarios administradores
 
