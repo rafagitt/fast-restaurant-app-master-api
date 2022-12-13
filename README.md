@@ -28,7 +28,6 @@ también puede cancelar los pedidos que le soliciten por teléfono
 a ordenar platillos en un periodo de 4 días más
 
 - Los Administradores deben poder ver los pedidos de todos, para poder atenderlos o cancelarlos
-- 
 
 ### Para ejecutar esta aplicacion (Modo Desarrollo) necesita:
 
