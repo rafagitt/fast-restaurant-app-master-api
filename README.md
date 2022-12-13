@@ -63,7 +63,7 @@ Simplemente en los archivos views.py de app food y app user puede borrar o comen
 
 Inicie Sesión desde Django Admin y listo! Puede probar los diferentes tipos de permisos de usuarios comunes y de usuarios administradores
 
-### Disfrute de leer el código y de probarlo!
+### Disfrute de leer el código y de probarlo a su gusto!
 
 
 
