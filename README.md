@@ -1,7 +1,9 @@
 # FAST RESTAURANT
 
+
 ## Esta es una API hecha con Django, Django Restframework,
-Doker, Docker-compose, conectada a una base de datos Postgresql
+## Doker, Docker-compose, conectada a una base de datos Postgresql
+
 
 #### Características:
 
@@ -12,6 +14,7 @@ PRIVADO: Además de lo publico, puede generar pedidos de los platillos de este r
 ADMINISTRADOR: Puede Ver, Crear, Actualizar, Eliminar Platillos en su Panel Administrativo, Además debe de estar
 pendiente de los pedidos que debe Entregar que le hayan solicitado los clientes,
 también puede cancelar los pedidos que le soliciten por teléfono
+
 
 #### Reglas de la API:
 
@@ -25,6 +28,7 @@ también puede cancelar los pedidos que le soliciten por teléfono
 a ordenar platillos en un periodo de 4 días más
 
 - Los Administradores deben poder ver los pedidos de todos, para poder atenderlos o cancelarlos
+- 
 
 ### Para ejecutar esta aplicacion (Modo Desarrollo) necesita:
 
